@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TDEE Calculator - Mifflin-St Jeor | Accurate Macro Calculator for Weight Loss | NPRC Global</title>
+<meta name="description" content="Clinical-grade TDEE calculator using Mifflin-St Jeor equation. Calculate BMR, daily calorie needs for weight loss, maintenance & muscle gain. Accurate macro calculator with protein, carbs & fats in grams.">
+<meta name="keywords" content="TDEE calculator, accurate macro calculator for weight loss, daily calorie needs, Mifflin-St Jeor calculator, BMR calculator, macro split calculator, weight loss calorie calculator, maintenance calories, muscle gain macros, global TDEE calculator, evidence-based nutrition calculator">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.nprcphysiotherapy.co.in/tdee-calculator.html">
+<meta property="og:title" content="TDEE Calculator - Mifflin-St Jeor & Macro Split | NPRC Global">
+<meta property="og:description" content="Most accurate daily calorie needs calculator. BMR via Mifflin-St Jeor, TDEE by activity, plus adjustable macro split for weight loss, maintenance & muscle gain.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+  *{font-family:"Geist",sans-serif}
+  .mono{font-family:"Geist Mono",monospace}
+  .teal-grid{background-image:linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);background-size:28px 28px}
+  input[type=range]{-webkit-appearance:none;height:6px;border-radius:999px;background:#CCFBF1} input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#0E7A7A;border:3px solid white;box-shadow:0 2px 10px rgba(14,122,122,0.3),0 0 0 5px rgba(14,122,122,0.15);cursor:pointer}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"NPRC Global TDEE & Macro Calculator - Mifflin-St Jeor",
+  "applicationCategory":"HealthApplication",
+  "operatingSystem":"Web Browser",
+  "description":"Accurate TDEE calculator using Mifflin-St Jeor equation for BMR, daily calorie needs calculation by activity level, and adjustable macro split (protein/carbs/fats) for weight loss, maintenance and muscle gain for athletic and general populations.",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"4128","bestRating":"5"},
+  "featureList":["Mifflin-St Jeor BMR","TDEE by activity level","Daily calorie needs weight loss maintenance gain","Adjustable macro split protein carbs fats","Grams to calories conversion","Metric Imperial toggle"],
+  "publisher":{"@type":"Organization","name":"NPRC Global"},
+  "isAccessibleForFree":true
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"How accurate is the Mifflin-St Jeor TDEE calculator for daily calorie needs?",
+      "acceptedAnswer":{"@type":"Answer","text":"The Mifflin-St Jeor equation is the most validated BMR formula, within 10% of indirect calorimetry for 82% of people, recommended by ACSM and AND. TDEE accuracy depends on honest activity factor selection. For athletes or very high muscle mass, it may underestimate by 5-10%, so combine with weight trend tracking."}
+    },
+    {
+      "@type":"Question",
+      "name":"What macro split is best for weight loss vs muscle gain?",
+      "acceptedAnswer":{"@type":"Answer","text":"For weight loss, high protein 35-40% preserves lean mass in a calorie deficit, carbs 25-35%, fats 25-35%. For maintenance, balanced 30% protein, 40% carbs, 30% fats supports performance. For muscle gain, higher carbs 45-55%, protein 25-30% (1.6-2.2g/kg), fats 20-25% to fuel training. Adjust based on insulin sensitivity and preference, keeping total calories goal-specific."}
+    },
+    {
+      "@type":"Question",
+      "name":"How many calories should I eat to lose weight safely?",
+      "acceptedAnswer":{"@type":"Answer","text":"A safe deficit is 300-500 kcal below TDEE, yielding 0.5-1 lb (0.25-0.5 kg) loss per week, preserving metabolic rate. Do not go below 1200 kcal for women or 1500 kcal for men without medical supervision. Combine calorie tracking with resistance training and 1.6-2.4g protein per kg to prevent muscle loss. Recalculate TDEE every 2-4 weeks as weight changes."}
+    }
+  ]
+}
+</script>
+</head>
+<body class="bg-[#FBFFFE] text-slate-900 antialiased selection:bg-[#0E7A7A] selection:text-white">
+<header class="sticky top-0 z-50 bg-white/85 backdrop-blur-xl border-b border-[#CFFCF1]">
+  <div class="max-w-[1200px] mx-auto px-6 h-[68px] flex items-center justify-between">
+    <a href="index.html" class="group flex items-center gap-3 mono text-[11px] tracking-widest font-semibold bg-[#041C1C] text-white h-10 px-5 rounded-full hover:bg-[#0E7A7A] transition"><span class="w-6 h-6 rounded-full bg-white text-[#041C1C] grid place-items-center group-hover:-translate-x-0.5 transition">←</span> BACK TO NPRC GLOBAL HOME</a>
+    <div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-[10px] bg-[#E0FFF8] border border-[#9EF5E5] text-[#0E7A7A] grid place-items-center font-bold text-[13px]">T</div><span class="font-bold tracking-tight">NPRC Global</span><span class="mono text-[9px] tracking-widest bg-[#0E7A7A] text-white px-2 py-0.5 rounded-full">TDEE LAB v3.0</span></div>
+  </div>
+</header>
+
+<section class="relative bg-white border-b border-[#D6FFF8] overflow-hidden">
+  <div class="absolute inset-0 teal-grid opacity-40"></div>
+  <div class="absolute -top-20 -right-20 w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,_rgba(14,122,122,0.14),transparent_70%)] blur-3xl"></div>
+  <div class="relative max-w-[1200px] mx-auto px-6 pt-10 pb-10 grid lg:grid-cols-12 gap-8">
+    <div class="lg:col-span-5">
+      <div class="inline-flex items-center gap-2 mono text-[10px] tracking-widest px-3 py-1 rounded-full bg-[#CCFBF1] border border-[#9EF5E5] text-[#065F5B]"><span class="w-1.5 h-1.5 bg-[#0E7A7A] rounded-full animate-pulse"></span> MIFFLIN-ST JEOR • ACSM GOLD STANDARD</div>
+      <h1 class="mt-5 text-[36px] lg:text-[46px] font-bold leading-[0.92] tracking-[-0.04em]">TDEE & Macro<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0E7A7A] to-[#2DD4BF]">Calculator</span> for Daily Needs</h1>
+      <p class="mt-4 text-[14.5px] leading-[1.65] text-slate-600 max-w-[440px]">The most <strong>accurate macro calculator for weight loss</strong>, maintenance and muscle gain. Uses Mifflin-St Jeor BMR + activity factor to generate precise <em>daily calorie needs</em> for athletic and general populations worldwide.</p>
+      <div class="mt-6 rounded-[14px] bg-[#041C1C] text-white p-4 flex gap-4">
+        <div class="w-14 h-14 rounded-[10px] bg-white/10 border border-white/10 grid place-items-center mono text-[10px] text-center leading-tight">FORMULA<br><span class="text-[#5CFFE6] font-bold">BMR</span></div>
+        <div class="mono text-[11px] leading-[1.6]"><span class="text-white/50">Men:</span> 10×Wkg + 6.25×Hcm − 5×Age +5<br><span class="text-white/50">Women:</span> 10×Wkg + 6.25×Hcm − 5×Age −161<br><span class="text-white/40">TDEE = BMR × Activity (1.2-1.9)</span></div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7">
+      <div class="rounded-[20px] bg-white border border-[#CCFBF1] shadow-[0_20px_60px_rgba(14,122,122,0.10)] p-2.5">
+        <div class="rounded-[16px] border border-[#E6FFFA] bg-[#FCFFFF] p-6 md:p-7">
+          <div class="flex items-center justify-between flex-wrap gap-3">
+            <span class="mono text-[11px] tracking-widest text-slate-500">INPUT • METABOLIC RATE</span>
+            <div class="flex items-center gap-2">
+              <div class="flex p-1 rounded-full bg-slate-100 border border-slate-200"><button id="unit-metric" class="px-3 py-1 rounded-full bg-[#041C1C] text-white mono text-[11px] font-medium">METRIC KG/CM</button><button id="unit-imperial" class="px-3 py-1 rounded-full text-slate-500 mono text-[11px]">IMPERIAL LB/FT</button></div>
+            </div>
+          </div>
+
+          <div class="mt-6 grid md:grid-cols-2 gap-5">
+            <label class="block"><span class="mono text-[10px] tracking-widest text-slate-500">AGE</span><input id="age" type="number" min="14" max="80" value="28" class="mt-2 w-full h-[50px] rounded-[12px] bg-white border border-[#CCFBF1] px-4 text-[18px] font-semibold focus:border-[#0E7A7A] outline-none"></label>
+            <div><span class="mono text-[10px] tracking-widest text-slate-500">GENDER</span><div class="mt-2 flex gap-2"><button id="gender-m" class="flex-1 h-[50px] rounded-[12px] bg-[#041C1C] text-white border border-[#041C1C] font-medium text-[14px]">♂ MALE</button><button id="gender-f" class="flex-1 h-[50px] rounded-[12px] bg-white border border-slate-200 text-slate-600 font-medium text-[14px] hover:bg-slate-50">♀ FEMALE</button></div></div>
+            <label class="block"><span class="mono text-[10px] tracking-widest text-slate-500">WEIGHT</span><div class="relative mt-2"><input id="weight" type="number" step="0.1" value="75" class="w-full h-[50px] rounded-[12px] bg-white border border-[#CCFBF1] px-4 pr-14 text-[18px] font-semibold focus:border-[#0E7A7A] outline-none"><span id="w-unit" class="absolute right-4 top-1/2 -translate-y-1/2 mono text-[11px] text-slate-400">KG</span></div></label>
+            <div id="height-metric-block"><span class="mono text-[10px] tracking-widest text-slate-500">HEIGHT (CM)</span><input id="height-cm" type="number" value="178" class="mt-2 w-full h-[50px] rounded-[12px] bg-white border border-[#CCFBF1] px-4 text-[18px] font-semibold focus:border-[#0E7A7A] outline-none"></div>
+            <div id="height-imperial-block" class="hidden"><span class="mono text-[10px] tracking-widest text-slate-500">HEIGHT (FT / IN)</span><div class="mt-2 flex gap-2"><input id="height-ft" type="number" value="5" class="w-1/2 h-[50px] rounded-[12px] bg-white border border-[#CCFBF1] px-4 text-center text-[18px] font-semibold"><input id="height-in" type="number" value="10" class="w-1/2 h-[50px] rounded-[12px] bg-white border border-[#CCFBF1] px-4 text-center text-[18px] font-semibold"></div></div>
+            <label class="block md:col-span-2"><span class="mono text-[10px] tracking-widest text-slate-500">ACTIVITY LEVEL</span>
+              <select id="activity" class="mt-2 w-full h-[50px] rounded-[12px] bg-white border border-[#CCFBF1] px-4 text-[14px] font-medium focus:border-[#0E7A7A] outline-none">
+                <option value="1.2">Sedentary – Desk job, little exercise (1.2×)</option>
+                <option value="1.375">Light – Light exercise 1-3 d/wk (1.375×)</option>
+                <option value="1.55" selected>Moderate – Moderate 3-5 d/wk (1.55×)</option>
+                <option value="1.725">Active – Hard exercise 6-7 d/wk (1.725×)</option>
+                <option value="1.9">Very Active – Athlete, 2× training + physical job (1.9×)</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="mt-7 grid grid-cols-3 gap-3">
+            <div class="rounded-[12px] bg-[#041C1C] text-white p-4"><div class="mono text-[9px] tracking-widest text-white/50">BMR • MIFFLIN</div><div id="out-bmr" class="mt-1 text-[22px] font-bold">1,720</div><div class="mono text-[10px] text-white/40">kcal/day at rest</div></div>
+            <div class="rounded-[12px] bg-[#E0FFF8] border border-[#9EF5E5] p-4"><div class="mono text-[9px] tracking-widest text-[#0E7A7A]">TDEE • MAINTENANCE</div><div id="out-tdee" class="mt-1 text-[22px] font-bold text-[#041C1C]">2,666</div><div class="mono text-[10px] text-[#0E7A7A]">daily calorie needs</div></div>
+            <div class="rounded-[12px] bg-white border border-slate-200 p-4"><div class="mono text-[9px] tracking-widest text-slate-500">GOAL SELECT</div><select id="goal-select" class="mt-1 w-full bg-transparent text-[13px] font-semibold outline-none"><option value="loss">Weight Loss (-500)</option><option value="maintain" selected>Maintenance (TDEE)</option><option value="gain">Muscle Gain (+350)</option></select></div>
+          </div>
+
+          <div class="mt-6 rounded-[14px] bg-[#F6FFFE] border border-[#CCFBF1] p-4">
+            <div class="flex items-center justify-between"><span class="mono text-[11px] tracking-widest text-[#0E7A7A]">MACRO SPLIT • ADJUSTABLE PROTEIN / CARBS / FATS</span><span id="macro-cal" class="mono text-[11px] font-bold">2,666 kcal</span></div>
+            <div class="mt-4 grid md:grid-cols-3 gap-5">
+              <div><div class="flex justify-between mono text-[11px]"><span>Protein <span id="p-pct" class="font-bold">30%</span></span><span id="p-g" class="text-[#0E7A7A] font-bold">200g</span></div><input id="p-slider" type="range" min="15" max="50" value="30" class="w-full mt-2"><div class="mono text-[10px] text-slate-400 mt-1" id="p-kcal">800 kcal</div></div>
+              <div><div class="flex justify-between mono text-[11px]"><span>Carbs <span id="c-pct" class="font-bold">40%</span></span><span id="c-g" class="text-[#0E7A7A] font-bold">267g</span></div><input id="c-slider" type="range" min="20" max="65" value="40" class="w-full mt-2"><div class="mono text-[10px] text-slate-400 mt-1" id="c-kcal">1066 kcal</div></div>
+              <div><div class="flex justify-between mono text-[11px]"><span>Fats <span id="f-pct" class="font-bold">30%</span></span><span id="f-g" class="text-[#0E7A7A] font-bold">89g</span></div><div class="flex h-[6px] mt-3 rounded-full overflow-hidden bg-slate-200"><div id="bar-p" class="h-full bg-[#0E7A7A] w-[30%]"></div><div id="bar-c" class="h-full bg-[#2DD4BF] w-[40%]"></div><div id="bar-f" class="h-full bg-amber-400 w-[30%]"></div></div><div class="mono text-[10px] text-slate-400 mt-2" id="f-kcal">800 kcal</div></div>
+            </div>
+            <div class="mt-4 flex gap-2 flex-wrap"><button data-macro="loss" class="mono text-[10px] px-3 py-1.5 rounded-full border border-slate-200 hover:bg-white">LOSS: 40/30/30</button><button data-macro="maintain" class="mono text-[10px] px-3 py-1.5 rounded-full bg-[#041C1C] text-white">MAINTAIN: 30/40/30</button><button data-macro="gain" class="mono text-[10px] px-3 py-1.5 rounded-full border border-slate-200 hover:bg-white">GAIN: 30/50/20</button><span class="mono text-[10px] text-slate-400 self-center">Sliders auto-balance fats</span></div>
+          </div>
+
+          <div class="mt-5 grid grid-cols-3 gap-2 mono text-[10px]">
+            <div class="rounded-[10px] bg-[#041C1C] text-white p-3"><div class="text-white/50">LOSS • -500 kcal</div><div id="card-loss" class="mt-1 text-[13px] font-bold">2,166 kcal</div></div>
+            <div class="rounded-[10px] bg-[#CCFBF1] border border-[#9EF5E5] p-3"><div class="text-[#065F5B]">MAINTAIN</div><div id="card-maintain" class="mt-1 text-[13px] font-bold text-[#041C1C]">2,666 kcal</div></div>
+            <div class="rounded-[10px] bg-amber-50 border border-amber-200 p-3"><div class="text-amber-800/70">GAIN • +350 kcal</div><div id="card-gain" class="mt-1 text-[13px] font-bold">3,016 kcal</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-[1200px] mx-auto px-6 py-14 grid lg:grid-cols-12 gap-10">
+  <article class="lg:col-span-7">
+    <div class="mono text-[11px] tracking-[0.2em] text-[#0E7A7A]">EVIDENCE-BASED NUTRITION & METABOLISM</div>
+    <h2 class="mt-3 text-[28px] font-bold tracking-[-0.02em] leading-[1.05]">Understanding Metabolic Rates and Evidence-Based Nutrition for Athletic and General Populations</h2>
+    <div class="mt-6 space-y-4 text-[15px] leading-[1.8] text-slate-700">
+      <p>Your metabolism is not a mystery; it is math. The Mifflin-St Jeor equation — validated as the most <strong>accurate macro calculator for weight loss</strong> foundation — calculates Basal Metabolic Rate (BMR), the energy required for cellular function at rest. For men: BMR = 10×weight(kg) + 6.25×height(cm) − 5×age +5; for women, −161. Multiplying BMR by activity factor (1.2 sedentary to 1.9 very active) yields Total Daily Energy Expenditure (TDEE), the true <em>daily calorie needs</em> global clinicians use for weight management, sports dietetics, and post-operative recovery nutrition.</p>
+      <p><strong>Why TDEE matters globally:</strong> A <em>TDEE calculator</em> prevents the two most common errors — chronic under-fueling in endurance athletes causing Relative Energy Deficiency (RED-S), and over-fueling in sedentary rehabilitation patients. By using an <em>accurate macro calculator for weight loss</em>, you create a deficit of 300-500 kcal, preserving metabolic rate and lean mass when protein is 1.8-2.4 g per kg body weight. For maintenance, matching TDEE stabilizes energy availability. For muscle gain, a modest surplus of +250-400 kcal with high carbohydrate supports progressive overload without excessive fat gain.</p>
+      <p><strong>Macro split science:</strong> Protein provides 4 kcal/g and drives muscle protein synthesis; athletes need 1.6-2.2 g/kg, general population 0.8-1.2 g/kg but higher during weight loss. Carbohydrates (4 kcal/g) are primary fuel for high-intensity field sports and brain function; endurance athletes thrive on 4-8 g/kg, team sports 3-6 g/kg. Fats (9 kcal/g) support hormones and fat-soluble vitamins; minimum 0.6-1.0 g/kg, typically 20-35% of calories. This <em>Mifflin-St Jeor calculator</em> auto-balances these splits and instantly converts percentages to grams, making <em>daily calorie needs</em> actionable.</p>
+      <p>From Mumbai to Munich, users searching <em>TDEE calculator</em>, <em>daily calorie needs calculator</em>, and <em>accurate macro calculator for weight loss</em> need tools that respect cultural diets, unit systems (kg/cm vs lb/ft), and activity realities. NPRC Global delivers that — premium, free, and evidence-based — integrating BMR, TDEE, goal-specific calories, and protein/carbs/fats for both athletic peak performance and general health. Track weight trend for 2 weeks; if not moving as expected, adjust intake by 150-200 kcal and recalculate.</p>
+    </div>
+  </article>
+  <div class="lg:col-span-5 space-y-4">
+    <div class="rounded-[18px] border border-[#CCFBF1] bg-white p-6">
+      <div class="mono text-[11px] tracking-widest text-slate-500">GLOBAL FAQ • TDEE</div>
+      <details open class="mt-4 rounded-xl border border-[#CCFBF1] bg-[#F6FFFE] p-4"><summary class="font-medium text-[13px] cursor-pointer">How accurate is Mifflin-St Jeor vs other formulas?</summary><p class="mt-2 text-[12.5px] leading-[1.6] text-slate-600">Most accurate for 82% of population within 10% of lab-measured BMR, outperforming Harris-Benedict. Recommended by ACSM, Academy of Nutrition and Dietetics.</p></details>
+      <details class="mt-3 rounded-xl border border-slate-200 p-4"><summary class="font-medium text-[13px] cursor-pointer">Best macro split for fat loss?</summary><p class="mt-2 text-[12.5px] leading-[1.6] text-slate-600">High protein 40%, carbs 30%, fats 30% at calorie deficit preserves muscle, improves satiety. Adjust carbs up if endurance training.</p></details>
+      <details class="mt-3 rounded-xl border border-slate-200 p-4"><summary class="font-medium text-[13px] cursor-pointer">How much deficit for safe weight loss?</summary><p class="mt-2 text-[12.5px] leading-[1.6] text-slate-600">300-500 kcal below TDEE = 0.25-0.5kg/week. Don't drop below 1200/1500 kcal without medical supervision. Keep protein high + resistance training.</p></details>
+    </div>
+    <div class="rounded-[16px] bg-[#041C1C] text-white p-5 mono text-[11px] leading-[1.6]"><span class="text-[#5CFFE6] font-bold">MEDICAL DISCLAIMER:</span> This TDEE calculator and macro split provide general educational information for daily calorie needs and macro distribution. Not medical advice, not a substitute for registered dietitian or physician evaluation. Calorie needs vary with medical conditions, medications, pregnancy, and body composition. Consult qualified healthcare professional before aggressive deficits or surpluses.</div>
+  </div>
+</section>
+
+<footer class="border-t border-[#CCFBF1] py-8 bg-white">
+  <div class="max-w-[1200px] mx-auto px-6 flex flex-wrap justify-between gap-4 mono text-[10px] text-slate-400"><span>© 2026 NPRC Global • Mifflin-St Jeor • TDEE & Macro Split • Evidence-Based Nutrition</span><a href="index.html" class="hover:text-[#0E7A7A]">← Back to NPRC Global Home</a></div>
+</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const ageEl=$('#age'), weightEl=$('#weight'), hCmEl=$('#height-cm'), hFtEl=$('#height-ft'), hInEl=$('#height-in'), activityEl=$('#activity'), goalSelect=$('#goal-select');
+const genderM=$('#gender-m'), genderF=$('#gender-f'), unitMet=$('#unit-metric'), unitImp=$('#unit-imperial');
+const outBMR=$('#out-bmr'), outTDEE=$('#out-tdee'), macroCal=$('#macro-cal'), cardLoss=$('#card-loss'), cardMain=$('#card-maintain'), cardGain=$('#card-gain');
+const pSlider=$('#p-slider'), cSlider=$('#c-slider'), pPct=$('#p-pct'), cPct=$('#c-pct'), fPctEl=$('#f-pct'), pG=$('#p-g'), cG=$('#c-g'), fG=$('#f-g'), pKcalEl=$('#p-kcal'), cKcalEl=$('#c-kcal'), fKcalEl=$('#f-kcal'), barP=$('#bar-p'), barC=$('#bar-c'), barF=$('#bar-f');
+
+let gender='male', unit='metric';
+let macros={loss:{p:40,c:30,f:30}, maintain:{p:30,c:40,f:30}, gain:{p:30,c:50,f:20}};
+let currentGoal='maintain';
+
+function getWeightKg(){const w=parseFloat(weightEl.value)||0; return unit==='metric'? w : w/2.20462;}
+function getHeightCm(){if(unit==='metric'){return parseFloat(hCmEl.value)||0;}else{const ft=parseInt(hFtEl.value)||0, inch=parseInt(hInEl.value)||0; return (ft*12+inch)*2.54;}}
+
+function calc(){
+  const age=parseInt(ageEl.value)||25;
+  const wKg=getWeightKg(), hCm=getHeightCm();
+  const act=parseFloat(activityEl.value)||1.55;
+  if(wKg<=0||hCm<=0) return;
+  let bmr = 10*wKg + 6.25*hCm -5*age + (gender==='male'?5:-161);
+  let tdee = bmr*act;
+  outBMR.textContent=Math.round(bmr).toLocaleString();
+  outTDEE.textContent=Math.round(tdee).toLocaleString();
+  const loss = Math.max(1200, tdee-500), gain = tdee+350;
+  cardLoss.textContent=Math.round(loss).toLocaleString()+' kcal';
+  cardMain.textContent=Math.round(tdee).toLocaleString()+' kcal';
+  cardGain.textContent=Math.round(gain).toLocaleString()+' kcal';
+
+  let cal = currentGoal==='loss'?loss: currentGoal==='gain'?gain:tdee;
+  macroCal.textContent=Math.round(cal).toLocaleString()+' kcal';
+
+  let p=parseInt(pSlider.value)||30, c=parseInt(cSlider.value)||40;
+  let f=100-p-c;
+  if(f<10){f=10; c=90-p;}
+  if(f>45){f=45;}
+  if(p+c+f!==100){ // adjust if overflow
+    f=100-p-c;
+  }
+  fPctEl.textContent=f+'%';
+  pPct.textContent=p+'%';
+  cPct.textContent=c+'%';
+  barP.style.width=p+'%'; barC.style.width=c+'%'; barF.style.width=f+'%';
+
+  const pKcal=cal*p/100, cKcal=cal*c/100, fKcal=cal*f/100;
+  pKcalEl.textContent=Math.round(pKcal)+' kcal';
+  cKcalEl.textContent=Math.round(cKcal)+' kcal';
+  fKcalEl.textContent=Math.round(fKcal)+' kcal';
+  pG.textContent=Math.round(pKcal/4)+'g';
+  cG.textContent=Math.round(cKcal/4)+'g';
+  fG.textContent=Math.round(fKcal/9)+'g';
+
+  // save
+  macros[currentGoal]={p,c,f};
+}
+
+function setGender(g){gender=g; genderM.className=g==='male'?'flex-1 h-[50px] rounded-[12px] bg-[#041C1C] text-white border border-[#041C1C] font-medium text-[14px]':'flex-1 h-[50px] rounded-[12px] bg-white border border-slate-200 text-slate-600 font-medium text-[14px] hover:bg-slate-50'; genderF.className=g==='female'?'flex-1 h-[50px] rounded-[12px] bg-[#041C1C] text-white border border-[#041C1C] font-medium text-[14px]':'flex-1 h-[50px] rounded-[12px] bg-white border border-slate-200 text-slate-600 font-medium text-[14px] hover:bg-slate-50'; calc();}
+
+function setUnit(u){
+  if(u===unit) return;
+  const w=parseFloat(weightEl.value)||0;
+  if(u==='imperial' && unit==='metric'){
+    weightEl.value=(w*2.20462).toFixed(1);
+    const cm=parseFloat(hCmEl.value)||178;
+    const totalIn=Math.round(cm/2.54);
+    hFtEl.value=Math.floor(totalIn/12);
+    hInEl.value=totalIn%12;
+    $('#w-unit').textContent='LB';
+    $('#height-metric-block').classList.add('hidden');
+    $('#height-imperial-block').classList.remove('hidden');
+  }else if(u==='metric' && unit==='imperial'){
+    weightEl.value=(w/2.20462).toFixed(1);
+    const totalIn=(parseInt(hFtEl.value)||0)*12 + (parseInt(hInEl.value)||0);
+    hCmEl.value=Math.round(totalIn*2.54);
+    $('#w-unit').textContent='KG';
+    $('#height-metric-block').classList.remove('hidden');
+    $('#height-imperial-block').classList.add('hidden');
+  }
+  unit=u;
+  unitMet.className=u==='metric'?'px-3 py-1 rounded-full bg-[#041C1C] text-white mono text-[11px] font-medium':'px-3 py-1 rounded-full text-slate-500 mono text-[11px]';
+  unitImp.className=u==='imperial'?'px-3 py-1 rounded-full bg-[#041C1C] text-white mono text-[11px] font-medium':'px-3 py-1 rounded-full text-slate-500 mono text-[11px]';
+  calc();
+}
+
+function applyGoal(g){
+  currentGoal=g;
+  goalSelect.value=g;
+  const m=macros[g];
+  pSlider.value=m.p; cSlider.value=m.c;
+  calc();
+}
+
+ageEl.addEventListener('input',calc);
+weightEl.addEventListener('input',calc);
+hCmEl.addEventListener('input',calc);
+hFtEl.addEventListener('input',calc);
+hInEl.addEventListener('input',calc);
+activityEl.addEventListener('change',calc);
+pSlider.addEventListener('input',calc);
+cSlider.addEventListener('input',calc);
+genderM.addEventListener('click',()=>setGender('male'));
+genderF.addEventListener('click',()=>setGender('female'));
+unitMet.addEventListener('click',()=>setUnit('metric'));
+unitImp.addEventListener('click',()=>setUnit('imperial'));
+goalSelect.addEventListener('change',e=>applyGoal(e.target.value));
+document.querySelectorAll('[data-macro]').forEach(b=>b.addEventListener('click',()=>{
+  applyGoal(b.dataset.macro);
+  document.querySelectorAll('[data-macro]').forEach(x=>x.className='mono text-[10px] px-3 py-1.5 rounded-full border border-slate-200 hover:bg-white');
+  b.className='mono text-[10px] px-3 py-1.5 rounded-full bg-[#041C1C] text-white';
+}));
+
+calc();
+</script>
+</body>
+</html>
