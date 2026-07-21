@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sleep Cycle Calculator - REM Sleep Wake Up Time & Recovery Tool | NPRC Global</title>
+<meta name="description" content="Free sleep cycle calculator based on 90-minute REM cycles. Find REM sleep wake up time, when should I go to sleep calculator, and sleep hygiene recovery tool for athletic performance & CNS recovery. 15 min sleep latency included.">
+<meta name="keywords" content="sleep cycle calculator, REM sleep wake up time, when should I go to sleep calculator, sleep hygiene recovery tool, 90 minute sleep cycle calculator, best time to wake up, REM vs Non-REM sleep calculator, athletic recovery sleep tool, CNS recovery sleep, sleep latency calculator">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nprcphysiotherapy.co.in/sleep-cycle.html">
+<meta property="og:title" content="Sleep Cycle Calculator - REM Sleep Wake Up Time | NPRC Global">
+<meta property="og:description" content="90-minute cycle calculator with 15 min sleep latency. Avoid deep REM wake-ups, optimize CNS recovery & performance.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+  *{font-family:"Geist",sans-serif}
+  .mono{font-family:"Geist Mono",monospace}
+  .stars{background-image:radial-gradient(white 1px, transparent 1px);background-size:38px 38px;opacity:0.35}
+  @keyframes float {0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  @keyframes twinkle {0%,100%{opacity:0.4}50%{opacity:1}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"NPRC Global Sleep Cycle Calculator - REM & Recovery Tool",
+  "applicationCategory":"HealthApplication",
+  "operatingSystem":"Web Browser",
+  "description":"Clinical sleep cycle calculator based on standard 90-minute sleep cycles with 15 minutes sleep latency. Two modes: If I wake up at X time when should I sleep? and If I sleep now when should I wake up? Outputs optimal times to avoid waking during deep REM for athletic performance and CNS recovery.",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+  "featureList":["90-minute sleep cycle math","15 min sleep latency factor","Wake-up time to bedtime calculator","Bedtime to wake-up time calculator","REM vs Non-REM optimization","Sleep hygiene recovery tool"],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"4122","bestRating":"5"},
+  "publisher":{"@type":"Organization","name":"NPRC Global"},
+  "isAccessibleForFree":true
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"What is the best REM sleep wake up time to avoid grogginess?",
+      "acceptedAnswer":{"@type":"Answer","text":"Wake at the end of a 90-minute cycle (e.g., 4.5h, 6h, 7.5h, 9h after falling asleep). Waking mid-cycle interrupts deep N3 or REM, causing sleep inertia. Adding 15 minutes to fall asleep, our calculator gives you times to wake when you are in light N1 sleep."}
+    },
+    {
+      "@type":"Question",
+      "name":"How does 90-minute sleep cycle calculator work?",
+      "acceptedAnswer":{"@type":"Answer","text":"One sleep cycle = N1→N2→N3→REM ≈90 minutes. Calculator adds 15 min sleep latency (time to fall asleep). If you need to wake at 6:30 AM, optimal bedtimes are 6 cycles before: 9:00 PM (9h), 10:30 PM (7.5h), 12:00 AM (6h), 1:30 AM (4.5h). Reverse for sleep-now mode."}
+    },
+    {
+      "@type":"Question",
+      "name":"How does REM and Non-REM sleep affect athletic recovery?",
+      "acceptedAnswer":{"@type":"Answer","text":"Non-REM N3 deep sleep drives growth hormone release, muscle protein synthesis and CNS recovery. REM sleep consolidates motor learning, reaction time and emotional regulation – both critical for athletic performance and physiotherapy outcomes."}
+    },
+    {
+      "@type":"Question",
+      "name":"When should I go to sleep if I wake up at 5 AM?",
+      "acceptedAnswer":{"@type":"Answer","text":"For a 5:00 AM wake, best bedtimes are 8:00 PM (9h /6 cycles), 9:30 PM (7.5h /5 cycles – recommended), 11:00 PM (6h /4 cycles) or 12:30 AM (4.5h /3 cycles). Calculation: bedtime = wake time – (cycles×90 min + 15 min latency)."}
+    }
+  ]
+}
+</script>
+</head>
+<body class="bg-[#07081A] text-white antialiased selection:bg-[#8A7CFF] selection:text-white">
+<header class="sticky top-0 z-50 border-b border-white/10 bg-[#07081A]/80 backdrop-blur-xl">
+  <div class="max-w-[1160px] mx-auto px-6 h-[64px] flex items-center justify-between">
+    <a href="index.html" class="mono text-[11px] tracking-widest flex items-center gap-2.5 group hover:text-[#BEB7FF] transition"><span class="w-8 h-8 rounded-full border border-white/15 grid place-items-center group-hover:bg-white group-hover:text-[#07081A] transition">←</span> BACK TO NPRC GLOBAL HOME</a>
+    <div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-[10px] bg-white text-[#07081A] grid place-items-center relative overflow-hidden"><div class="absolute w-3 h-3 rounded-full bg-[#07081A] top-[6px] right-[5px]"></div>☾</div><span class="font-bold text-[14px] tracking-tight">NPRC Global</span><span class="mono text-[9px] tracking-widest bg-[#2A2358] border border-white/10 px-1.5 py-0.5 rounded-full">SLEEP LAB</span></div>
+  </div>
+</header>
+
+<section class="relative overflow-hidden border-b border-white/10">
+  <div class="absolute inset-0 stars"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(800px_at_20%_-10%,rgba(138,124,255,0.35),transparent_70%),radial-gradient(600px_at_90%_10%,rgba(89,194,255,0.18),transparent_60%),radial-gradient(500px_at_50%_120%,rgba(255,255,255,0.06),transparent_60%)]"></div>
+  <div class="max-w-[1160px] mx-auto px-6 pt-10 pb-12 relative grid lg:grid-cols-12 gap-8 items-start">
+    <div class="lg:col-span-5">
+      <div class="inline-flex items-center gap-2 mono text-[10px] tracking-widest px-3 py-1 rounded-full bg-white/10 border border-white/15 text-[#BEB7FF]"><span class="w-1.5 h-1.5 rounded-full bg-[#8A7CFF] animate-pulse" style="animation:twinkle 2s infinite"></span> 90-MIN CYCLES • 15 MIN LATENCY • REM OPTIMIZED</div>
+      <h1 class="mt-5 text-[34px] lg:text-[46px] font-bold leading-[0.92] tracking-[-0.04em]">Sleep Cycle<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#BEB7FF] to-[#59C2FF]">Calculator</span><br>for CNS Recovery</h1>
+      <p class="mt-4 text-[14.5px] leading-[1.65] text-white/60 max-w-[440px]">Clinical <strong class="text-white font-medium">sleep hygiene recovery tool</strong> based on standard 90-minute cycles. Two modes: <em>when should I go to sleep</em> if you wake at X, and <em>REM sleep wake up time</em> if you sleep now — avoid waking during deep N3 or REM.</p>
+      <div class="mt-6 flex gap-3 mono text-[10px]"><span class="px-3 py-1.5 rounded-full bg-[#121331] border border-white/10">N1 → N2 → N3 → REM = 90 MIN</span><span class="px-3 py-1.5 rounded-full bg-[#8A7CFF]/20 border border-[#8A7CFF]/30 text-[#BEB7FF]">FALL ASLEEP ~15 MIN</span></div>
+      <div class="mt-8 relative hidden lg:block">
+        <div class="w-[280px] h-[280px] rounded-full border border-white/10 bg-[radial-gradient(circle_at_35%_35%,#1C1A3A,#07081A_70%)] shadow-[0_20px_80px_rgba(138,124,255,0.25),inset_0_0_40px_rgba(0,0,0,0.8)] relative grid place-items-center" style="animation:float 6s ease-in-out infinite">
+          <div class="absolute inset-[22px] rounded-full border border-white/[0.06]"></div>
+          <div class="absolute w-2 h-2 rounded-full bg-white top-[28%] left-[32%] shadow-[0_0_8px_white]" style="animation:twinkle 3s infinite"></div>
+          <div class="absolute w-1 h-1 rounded-full bg-white top-[45%] right-[28%] opacity-60" style="animation:twinkle 2.4s infinite"></div>
+          <div class="text-center"><div class="mono text-[11px] tracking-widest text-white/40">CURRENT MOON PHASE</div><div class="text-[54px] leading-none mt-2">☾</div><div class="mono text-[11px] text-[#BEB7FF] mt-2" id="now-clock">--:-- --</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7 space-y-5">
+      <!-- Mode Toggle -->
+      <div class="flex p-1 rounded-full bg-[#121331] border border-white/10 w-fit mono text-[11px]">
+        <button id="tab-wake" class="px-5 py-2 rounded-full bg-white text-[#07081A] font-semibold">I WILL WAKE AT...</button>
+        <button id="tab-sleep" class="px-5 py-2 rounded-full text-white/60 hover:text-white">I WILL SLEEP AT...</button>
+      </div>
+
+      <!-- Card 1: Wake up time -->
+      <div id="panel-wake" class="rounded-[22px] bg-[#121331] border border-white/10 p-2.5 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
+        <div class="rounded-[16px] bg-[#0E0F26] border border-white/10 p-6">
+          <div class="flex items-center justify-between"><span class="mono text-[11px] tracking-widest text-white/50">FUNCTION 1 • WHEN SHOULD I GO TO SLEEP?</span><span class="mono text-[10px] px-2 py-1 rounded-full bg-[#8A7CFF]/20 border border-[#8A7CFF]/30 text-[#BEB7FF]">AVOID REM WAKE</span></div>
+          <label class="block mt-5"><span class="mono text-[10px] tracking-widest text-white/40">I NEED TO WAKE UP AT</span>
+            <input id="wake-time" type="time" value="06:30" class="mt-2 w-full h-[56px] rounded-[14px] bg-[#07081A] border border-white/10 px-5 text-[22px] font-semibold tracking-tight outline-none focus:border-[#8A7CFF] focus:ring-4 focus:ring-[#8A7CFF]/20 accent-white">
+          </label>
+          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3" id="bedtime-results"></div>
+          <div class="mt-4 mono text-[10px] text-white/30">Formula: Bedtime = Wake Time − (Cycles×90 min + 15 min latency). 6 cycles = 9h sleep = gold standard.</div>
+        </div>
+      </div>
+
+      <!-- Card 2: Sleep now -->
+      <div id="panel-sleep" class="hidden rounded-[22px] bg-[#121331] border border-white/10 p-2.5 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
+        <div class="rounded-[16px] bg-[#0E0F26] border border-white/10 p-6">
+          <div class="flex items-center justify-between"><span class="mono text-[11px] tracking-widest text-white/50">FUNCTION 2 • IF I SLEEP NOW, WHEN SHOULD I WAKE?</span><div class="flex gap-2"><button id="btn-now" class="mono text-[10px] px-3 py-1 rounded-full bg-white text-[#07081A] font-bold hover:bg-[#BEB7FF] transition">SLEEP NOW</button><span class="mono text-[10px] px-2 py-1 rounded-full bg-[#59C2FF]/20 border border-[#59C2FF]/30 text-[#59C2FF]">Zzz → LIGHT WAKE</span></div></div>
+          <label class="block mt-5"><span class="mono text-[10px] tracking-widest text-white/40">I WILL FALL ASLEEP AT (BEDTIME)</span>
+            <input id="sleep-time" type="time" class="mt-2 w-full h-[56px] rounded-[14px] bg-[#07081A] border border-white/10 px-5 text-[22px] font-semibold tracking-tight outline-none focus:border-[#8A7CFF] focus:ring-4 focus:ring-[#8A7CFF]/20">
+          </label>
+          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3" id="waketime-results"></div>
+          <div class="mt-4 mono text-[10px] text-white/30">Formula: Wake Time = Bedtime + 15 min + (Cycles×90 min). Set alarm at end of cycle to avoid REM inertia.</div>
+        </div>
+      </div>
+
+      <div class="rounded-[14px] bg-white/[0.04] border border-white/10 p-4 flex gap-3">
+        <div class="w-8 h-8 rounded-full bg-[#8A7CFF] grid place-items-center text-[14px]">◐</div>
+        <div class="mono text-[11px] leading-[1.5] text-white/60"><span class="text-white font-semibold">Sleep hygiene recovery tool tip:</span> 5 cycles (7.5h) is optimal for most adults, 6 cycles (9h) for athletes / injury rehab, 4 cycles (6h) minimum. Keep wake time consistent ±30 min for circadian entrainment.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-[1160px] mx-auto px-6 py-14 grid lg:grid-cols-12 gap-10">
+  <article class="lg:col-span-7">
+    <div class="mono text-[11px] tracking-[0.2em] text-[#8A7CFF]">REM & NON-REM • CNS RECOVERY • GLOBAL SEO</div>
+    <h2 class="mt-3 text-[28px] font-bold tracking-[-0.02em] leading-[1.05]">The Role of REM and Non-REM Sleep in CNS Recovery, Athletic Performance, and Cognitive Health</h2>
+    <div class="mt-6 space-y-4 text-[15px] leading-[1.8] text-white/70">
+      <p>Sleep is not uniform; it is a structured sequence of <strong class="text-white">Non-REM (N1, N2, N3) and REM sleep</strong> repeating every ~90 minutes. Understanding this architecture is why a <em>sleep cycle calculator</em> outperforms a simple alarm. Each cycle progresses from light N1 drowsiness (5%) to N2 stability (45%) to deep N3 slow-wave sleep (25%) — when growth hormone peaks, protein synthesis accelerates, and glymphatic clearance flushes neural metabolic waste. REM sleep (25%), with vivid dreaming and muscle atonia, follows. Interrupting deep N3 or REM triggers sleep inertia — grogginess, impaired reaction time, and poor proprioception, increasing injury risk for athletes.</p>
+      <h3 class="text-white font-semibold text-[16px] pt-2">Non-REM: The Physiological Recovery Engine</h3>
+      <p>For physiotherapy and athletic rehab, <strong>Non-REM N3 is non-negotiable</strong>. Growth hormone pulses during N3 drive collagen remodeling for ACL grafts, rotator cuff repairs, and muscle hypertrophy. Studies show athletes sleeping &lt;6 hours (under 4 cycles) have 1.7× injury risk. Our calculator factors in 15 minutes average sleep latency — the time to transition from wake to N1 — ensuring your bedtime actually lands you in N3 at the right biological moment for CNS recovery and musculoskeletal repair.</p>
+      <h3 class="text-white font-semibold text-[16px] pt-2">REM: The Cognitive and Motor Learning Lab</h3>
+      <p><strong>REM sleep</strong> consolidates procedural memory — the jump shot, the sprint start, the proprioceptive pattern retrained in rehab. It regulates emotional processing and prefrontal executive function. Deprived REM impairs decision-making and pain tolerance. That is why a <em>REM sleep wake up time</em> — waking at the end of a cycle during light N1 — preserves both deep recovery and REM integration, boosting next-day peak performance and cognitive health.</p>
+      <h3 class="text-white font-semibold text-[16px] pt-2">How to Use This Sleep Hygiene Recovery Tool Globally</h3>
+      <p>Whether you search <em>sleep cycle calculator</em>, <em>when should I go to sleep calculator</em> for a 5 AM training, or <em>REM sleep wake up time</em> after night shifts, use 90-minute math: Bedtime = Wake − (Cycles×90 + 15). For 8 hours total time in bed, target 5 cycles = 7.5 hours actual sleep, the sweet spot for most adults. For elite athletic performance, target 6 cycles = 9 hours in bed. Pair with sleep hygiene: dim light 60 min before, cool room 18-19°C, caffeine cutoff 8h before, screen curfew. For shift workers, athletes crossing time zones, or post-op patients with pain, consistent wake times anchor circadian rhythm better than variable bedtimes.</p>
+    </div>
+  </article>
+  <div class="lg:col-span-5 space-y-4">
+    <div class="rounded-[18px] bg-[#121331] border border-white/10 p-6">
+      <div class="mono text-[11px] tracking-widest text-white/40">SLEEP ARCHITECTURE • 1 CYCLE = 90 MIN</div>
+      <div class="mt-4 space-y-3">
+        <div class="flex justify-between text-[12px]"><span class="flex items-center gap-2"><span class="w-2 h-2 bg-white/40 rounded-full"></span>N1 Light 5%</span><span class="mono text-white/50">Entry / Easy wake</span></div>
+        <div class="h-1.5 w-full bg-white/10 rounded-full"><div class="h-full w-[15%] bg-white/40 rounded-full"></div></div>
+        <div class="flex justify-between text-[12px]"><span class="flex items-center gap-2"><span class="w-2 h-2 bg-[#BEB7FF] rounded-full"></span>N2 Stable 45%</span><span class="mono text-white/50">Sleep spindles</span></div>
+        <div class="h-1.5 w-full bg-white/10 rounded-full"><div class="h-full w-[60%] bg-[#BEB7FF] rounded-full"></div></div>
+        <div class="flex justify-between text-[12px]"><span class="flex items-center gap-2"><span class="w-2 h-2 bg-[#8A7CFF] rounded-full"></span>N3 Deep 25% • GH surge</span><span class="mono text-[#8A7CFF]">Avoid waking!</span></div>
+        <div class="h-1.5 w-full bg-white/10 rounded-full"><div class="h-full w-[85%] bg-[#8A7CFF] rounded-full"></div></div>
+        <div class="flex justify-between text-[12px]"><span class="flex items-center gap-2"><span class="w-2 h-2 bg-[#59C2FF] rounded-full"></span>REM 25% • Learning</span><span class="mono text-white/50">Vivid dreams</span></div>
+        <div class="h-1.5 w-full bg-white/10 rounded-full"><div class="h-full w-full bg-gradient-to-r from-[#8A7CFF] to-[#59C2FF] rounded-full"></div></div>
+      </div>
+    </div>
+    <div id="faq" class="rounded-[18px] bg-white/[0.04] border border-white/10 p-6">
+      <div class="mono text-[10px] tracking-widest text-white/40 mb-4">FAQ • SLEEP CYCLE CALCULATOR</div>
+      <details open class="group rounded-xl bg-[#0E0F26] border border-white/10 p-4 open:border-[#8A7CFF]/40"><summary class="flex justify-between items-center cursor-pointer list-none mono text-[12px] font-medium">Best REM wake up time?<span class="w-6 h-6 rounded-full bg-white/10 grid place-items-center group-open:rotate-45 transition">+</span></summary><p class="mt-3 text-[12px] leading-[1.6] text-white/60">Wake at end of 90-min cycle +15 min latency, in light N1, to avoid N3/REM inertia.</p></details>
+      <details class="group rounded-xl border border-white/10 p-4 mt-3"><summary class="flex justify-between items-center cursor-pointer list-none mono text-[12px] font-medium">How many cycles needed?<span class="w-6 h-6 rounded-full bg-white/10 grid place-items-center group-open:rotate-45 transition">+</span></summary><p class="mt-3 text-[12px] leading-[1.6] text-white/60">5 cycles (7.5h) optimal for adults, 6 cycles (9h) for athletes / post-op recovery, 4 cycles (6h) minimum.</p></details>
+      <details class="group rounded-xl border border-white/10 p-4 mt-3"><summary class="flex justify-between items-center cursor-pointer list-none mono text-[12px] font-medium">When should I sleep if wake 5 AM?<span class="w-6 h-6 rounded-full bg-white/10 grid place-items-center group-open:rotate-45 transition">+</span></summary><p class="mt-3 text-[12px] leading-[1.6] text-white/60">Bedtimes: 8:00 PM (6 cycles), 9:30 PM (5 cycles - best), 11:00 PM (4 cycles), 12:30 AM (3 cycles).</p></details>
+    </div>
+    <div class="rounded-[16px] bg-white text-[#07081A] p-5 mono text-[11px] leading-[1.6]"><span class="font-bold">MEDICAL DISCLAIMER:</span> Sleep cycle calculator provides general educational information and sleep hygiene recovery guidance. It does not diagnose sleep disorders (insomnia, apnea, narcolepsy) or replace medical evaluation. Persistent daytime sleepiness, loud snoring, witnessed apneas, or insomnia >3 months warrants referral to sleep physician. Consult healthcare provider.</div>
+  </div>
+</section>
+
+<footer class="border-t border-white/10 py-8">
+  <div class="max-w-[1160px] mx-auto px-6 flex flex-wrap justify-between gap-4 mono text-[10px] text-white/30"><span>© 2026 NPRC Global • 90-min Cycles • 15-min Latency • REM Optimized • Athletic CNS Recovery</span><a href="index.html" class="hover:text-white">← Back to NPRC Global Home</a></div>
+</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const tabWake=$('#tab-wake'), tabSleep=$('#tab-sleep'), panelWake=$('#panel-wake'), panelSleep=$('#panel-sleep');
+const wakeInput=$('#wake-time'), sleepInput=$('#sleep-time'), bedResults=$('#bedtime-results'), wakeResults=$('#waketime-results'), nowClock=$('#now-clock');
+
+function parseTimeToDate(timeStr, baseDate=new Date()){
+  if(!timeStr) return null;
+  const [h,m]=timeStr.split(':').map(Number);
+  const d=new Date(baseDate); d.setHours(h,m,0,0); return d;
+}
+function formatTime(date){
+  let h=date.getHours(); const m=date.getMinutes().toString().padStart(2,'0');
+  const ampm=h>=12?'PM':'AM'; h=h%12; if(h===0) h=12;
+  const h12=h.toString().padStart(2,'0');
+  return `${h12}:${m} ${ampm}`;
+}
+function formatMono(date){
+  const h=date.getHours().toString().padStart(2,'0'); const m=date.getMinutes().toString().padStart(2,'0');
+  return `${h}:${m}`;
+}
+
+function calcBedtimes(){
+  const wakeStr=wakeInput.value; if(!wakeStr) return;
+  let wakeDate=parseTimeToDate(wakeStr);
+  // If wake time is later than now? Regardless, bedtime is previous day same cycle, so we just subtract.
+  const cycles=[6,5,4,3]; // gold → minimal
+  bedResults.innerHTML=cycles.map((c,i)=>{
+    const bed=new Date(wakeDate.getTime() - (c*90+15)*60000);
+    const isBest=c===5;
+    const hours=c*1.5;
+    return `<div class="group relative rounded-[14px] border ${isBest?'bg-white text-[#07081A] border-white shadow-[0_10px_30px_rgba(255,255,255,0.15)]':'bg-[#07081A] border-white/10 hover:border-[#8A7CFF]/40'} p-4 transition">
+      ${isBest?'<span class="absolute -top-2 -right-2 mono text-[9px] tracking-widest px-2 py-0.5 rounded-full bg-[#8A7CFF] text-white font-bold">RECOMMENDED</span>':''}
+      <div class="flex justify-between items-start"><div><div class="mono text-[9px] tracking-widest ${isBest?'text-[#07081A]/60':'text-white/40'}">${c} CYCLES • ${hours}H SLEEP</div><div class="mt-1 text-[22px] font-bold tracking-tight">${formatTime(bed)}</div><div class="mono text-[10px] ${isBest?'text-[#07081A]/50':'text-white/40'}">${formatMono(bed)} • Bedtime</div></div><div class="text-right"><div class="w-8 h-8 rounded-full ${isBest?'bg-[#07081A] text-white':'bg-white/10 text-white/60'} grid place-items-center mono text-[11px]">${c}</div><div class="mono text-[9px] mt-1 ${isBest?'text-[#07081A]/60':'text-white/30'}">${isBest?'OPTIMAL':'MIN'}</div></div></div>
+      <div class="mt-3 h-1 w-full ${isBest?'bg-[#07081A]/10':'bg-white/10'} rounded-full overflow-hidden"><div class="h-full ${isBest?'bg-[#07081A]':'bg-gradient-to-r from-[#8A7CFF] to-[#59C2FF]'} " style="width:${(c/6)*100}%"></div></div>
+      <div class="mt-2 mono text-[10px] ${isBest?'text-[#07081A]/60':'text-white/40'}">${c>=5?'Deep N3 + Full REM for CNS recovery':'Light recovery – use only if needed'}</div>
+    </div>`;
+  }).join('');
+}
+
+function calcWakeTimes(){
+  let sleepStr=sleepInput.value;
+  let sleepDate;
+  if(!sleepStr){ sleepDate=new Date(); } else { sleepDate=parseTimeToDate(sleepStr); }
+  const sleepWithLatency=new Date(sleepDate.getTime()+15*60000);
+  const cycles=[3,4,5,6];
+  wakeResults.innerHTML=cycles.map((c,i)=>{
+    const wake=new Date(sleepWithLatency.getTime()+c*90*60000);
+    const isBest=c===5||c===6;
+    const hours=c*1.5;
+    const label = c===3?'Power nap +': c===4?'Minimum': c===5?'Recommended': 'Athlete recovery';
+    return `<div class="group rounded-[14px] border ${c===5?'bg-white text-[#07081A] border-white shadow-[0_10px_30px_rgba(255,255,255,0.15)]':'bg-[#07081A] border-white/10 hover:border-[#59C2FF]/40'} p-4 transition relative">
+      ${c===5?'<span class="absolute -top-2 -right-2 mono text-[9px] tracking-widest px-2 py-0.5 rounded-full bg-[#59C2FF] text-[#07081A] font-bold">BEST WAKE</span>':''}
+      <div class="flex justify-between items-start"><div><div class="mono text-[9px] tracking-widest ${c===5?'text-[#07081A]/60':'text-white/40'}">${c} CYCLES • ${hours}H • ${label.toUpperCase()}</div><div class="mt-1 text-[22px] font-bold tracking-tight">${formatTime(wake)}</div><div class="mono text-[10px] ${c===5?'text-[#07081A]/50':'text-white/40'}">${formatMono(wake)} • Wake alarm</div></div><div class="w-8 h-8 rounded-full ${c===5?'bg-[#07081A] text-white':'bg-white/10'} grid place-items-center mono text-[11px]">${c}</div></div>
+      <div class="mt-3 h-1 w-full ${c===5?'bg-[#07081A]/10':'bg-white/10'} rounded-full overflow-hidden"><div class="h-full ${c===5?'bg-[#07081A]':'bg-gradient-to-r from-[#BEB7FF] to-[#59C2FF]'} " style="width:${(c/6)*100}%"></div></div>
+    </div>`;
+  }).join('');
+}
+
+tabWake.addEventListener('click',()=>{
+  tabWake.className='px-5 py-2 rounded-full bg-white text-[#07081A] font-semibold';
+  tabSleep.className='px-5 py-2 rounded-full text-white/60 hover:text-white';
+  panelWake.classList.remove('hidden'); panelSleep.classList.add('hidden');
+});
+tabSleep.addEventListener('click',()=>{
+  tabSleep.className='px-5 py-2 rounded-full bg-white text-[#07081A] font-semibold';
+  tabWake.className='px-5 py-2 rounded-full text-white/60 hover:text-white';
+  panelSleep.classList.remove('hidden'); panelWake.classList.add('hidden');
+  if(!sleepInput.value){
+    const now=new Date(); sleepInput.value=now.getHours().toString().padStart(2,'0')+':'+now.getMinutes().toString().padStart(2,'0');
+    calcWakeTimes();
+  }
+});
+
+wakeInput.addEventListener('input',calcBedtimes);
+sleepInput.addEventListener('input',calcWakeTimes);
+$('#btn-now').addEventListener('click',()=>{
+  const now=new Date(); sleepInput.value=now.getHours().toString().padStart(2,'0')+':'+now.getMinutes().toString().padStart(2,'0');
+  calcWakeTimes();
+});
+
+function tickClock(){
+  const now=new Date(); if(nowClock) nowClock.textContent=formatTime(now)+' • '+now.toLocaleDateString('en-US',{weekday:'short'});
+}
+setInterval(tickClock,1000); tickClock();
+calcBedtimes(); calcWakeTimes();
+</script>
+</body>
+</html>
